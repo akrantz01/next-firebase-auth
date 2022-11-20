@@ -1,5 +1,5 @@
 {
-  "name": "next-firebase-auth",
+  "name": "@akrantz01/next-firebase-auth",
   "version": "1.0.0-canary.17",
   "description": "Simple Firebase authentication for all Next.js rendering strategies",
   "keywords": [
@@ -114,5 +114,9 @@
   },
   "files": [
     "/build"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akrantz01/next-firebase-auth"
+  }
 }
