@@ -144,7 +144,7 @@ describe('cookies.js: getCookie', () => {
     // value in keys[0].
     // To get the expected value, we just copy-pasted the signed value
     // rather than computing it ourselves.
-    const MOCK_COOKIE_SIG_VAL = 'eOOK_EF-fiTOtyFgpFpik6OyEMA'
+    const MOCK_COOKIE_SIG_VAL = 'IfJZinSL_sX5mGhc7dPjyO1GNo8'
 
     await testApiHandler({
       handler: async (req, res) => {
@@ -587,7 +587,7 @@ describe('cookies.js: setCookie', () => {
         // value in keys[0].
         // To get the expected value, we just copy-pasted the signed value
         // rather than computing it ourselves.
-        const expectedVal = 'eOOK_EF-fiTOtyFgpFpik6OyEMA'
+        const expectedVal = 'IfJZinSL_sX5mGhc7dPjyO1GNo8'
 
         expect(
           setCookiesParsed.find(

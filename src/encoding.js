@@ -1,22 +1,17 @@
 /**
- * Decode a base64 value to an object.
+ * Decode a base64 value to a string.
  *
  * @param {String} string
- * @return {Object}
+ * @return {String}
  */
-export const decodeBase64 = (string) => {
-  const body = Buffer.from(string, 'base64').toString('utf8')
-  return JSON.parse(body)
-}
+export const decodeBase64 = (string) =>
+  Buffer.from(string, 'base64').toString('utf8')
 
 /**
- * Encode an object into a base64-encoded JSON string.
+ * Encode a string into a base64 string.
  *
- * @param {Object} obj
+ * @param {String} string
  * @return {String}
  * @private
  */
-export const encodeBase64 = (obj) => {
-  const str = JSON.stringify(obj)
-  return Buffer.from(str).toString('base64')
-}
+export const encodeBase64 = (string) => Buffer.from(string).toString('base64')
